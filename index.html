@@ -1,0 +1,42 @@
+<html ng-app="BookApp">
+<head>
+<script src="angular.min.js"></script>
+<script src="angular.route.js"></script>
+<script src="app.js"></script>
+<script src="controller.js"></script>
+<script src="Objectid.js"></script>
+<link rel="stylesheet" href="bootstrap.css">
+</head>
+<body>
+<br>
+
+<div  class="row-fluid container" ng-controller="ADD">
+<h1>Angular.js</h1><h2>Simple CMS demo using HTML5 localStorage</h2>
+<br><br>
+
+<div class="col-md-6 well">
+
+<h3>Add a book</h3>
+<form>
+<input type="text" class="form-control"  ng-model="title" placeholder="TITLE" required autofocus>
+<br>
+<input type="text" class="form-control" ng-model="price" placeholder="PRICE" required>
+<br>
+
+<a ng-click="F1()" href="/ang/index.html" class="btn btn-success" title="Add book to list"><span class="glyphicon glyphicon-plus">&nbsp;</span>ADD</a>
+</form>
+
+</div>
+
+
+<div ng-view class="col-md-6">
+
+</div>
+
+
+
+
+</div>
+
+</body>
+</html>
